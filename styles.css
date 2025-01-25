@@ -1,0 +1,57 @@
+
+#maindiv {
+    border: solid black 2px;
+    width: auto;
+    margin-bottom: 5px;
+}
+#Item {
+    margin:1px;
+    border: solid black 6px;
+    margin-bottom: 15px;
+}
+
+#titlediv{
+    display:flex;
+    justify-content:center;
+    border-bottom: solid orange 5px;
+}
+
+
+.header {
+    grid-area: header;
+    align-content: center;
+    font-size: 35px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bold;
+}
+
+.picture {
+    grid-area: picture;
+    width:auto;
+    
+}
+
+.allergens {
+    display:flex;
+    justify-self:left;
+    grid-area: allergens;
+    font-size: 30px;
+    font-family: 'Agency FB';
+}
+
+.calories {
+    display: flex;
+    justify-self: left;
+    grid-area: calories;
+    font-size: 30px;
+    font-family: 'Agency FB';
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid: 'header header  header header'
+        'picture picture allergens allergens'
+        'picture picture calories calories';
+}
